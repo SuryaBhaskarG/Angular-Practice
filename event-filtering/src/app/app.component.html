@@ -1,0 +1,15 @@
+<!-- app.component.html -->
+
+<!-- Example 1: Click event filtering -->
+<button (click)="onClick()">Click me!</button>
+
+<!-- Example 2: Mouseover event -->
+<div (mouseover)="onMouseOver()">Hover over me!</div>
+
+<!-- Example 3: Keypress event filtering -->
+<input (keyup)="onKeyUp($event)" placeholder="Type something" />
+
+<!-- Example 4: Keypress event filtering for specific keys -->
+<input (keydown.escape)="onEscapeKey()" placeholder="Press ESC" />
+
+<input (keydown.space)="onSpaceKey()" placeholder="Press SPACE" />
